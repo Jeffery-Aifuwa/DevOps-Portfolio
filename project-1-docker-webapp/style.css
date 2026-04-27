@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #000;
+  color: white;
+  padding: 40px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #000;
+  border-bottom: 1px solid #9333ea;
+  margin-bottom: 60px;
+}
+
+.logo img {
+  height: 50px;
+  filter: drop-shadow(0 0 10px #a855f7);
+}
+
+.logo nav a {
+  margin-left: 20px;
+  color: #f1f1f1;
+  font-weight: 600;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+.logo nav a:hover {
+  color: #a78bfa;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.identity {
+  max-width: 500px;
+  width: 100%;
+}
+
+.role {
+  font-size: 40px;
+  color: #a78bfa;
+  margin-bottom: 25px;
+}
+
+.pitch {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  color: white;
+  background: transparent;
+  border: 2px solid #9333ea;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-size: 15px;
+  border-radius: 7px;
+  font-family: "Outfit", sans-serif;
+}
+
+button:hover {
+  background: #9333ea;
+  color: white;
+}
+
+.profile img {
+  width: 500px;
+  max-width: 90%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+}
+
+section {
+  margin-bottom: 60px;
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section h2 {
+  font-size: 24px;
+  color: #d8b4fe;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #9333ea;
+  padding-bottom: 10px;
+}
+
+section p,
+section ul {
+  font-size: 16px;
+  color: white;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 25px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+.animate-scale {
+  animation: scaleIn 0.5s ease-in-out forwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile img {
+    height: auto;
+    width: 100%;
+  }
+
+  .role,
+  .pitch,
+  section p,
+  section ul {
+    font-size: 14px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+}
+
+.info-section a {
+  color: #a78bfa;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.info-section a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background: #9333ea;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #7e22ce;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header img {
+    margin-bottom: 0.5rem;
+  }
+
+  .identity,
+  .profile {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .identity h3.role {
+    font-size: 28px;
+  }
+
+  .identity .pitch {
+    font-size: 14px;
+  }
+
+  .profile img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .btn{
+    align-content: center;
+  }
+}
