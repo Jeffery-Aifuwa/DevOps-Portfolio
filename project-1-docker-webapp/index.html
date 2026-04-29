@@ -1,204 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Decentralized Finance | DeFi Future</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docker Test</title>
 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+    }
+
+    h1 {
+      color: white;
+      font-size: 3rem;
+      text-align: center;
+      padding: 30px 50px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      animation: pop 1s ease-in-out;
+    }
+
+    @keyframes pop {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <header class="logo animate-fade-in">
-    <img src="./Assets/SDFGHJKL.png" alt="Project Logo" />
-    <nav>
-      <a href="#vision">Vision</a>
-      <a href="#features">Features</a>
-      <a href="#usecases">Use Cases</a>
-      <a href="#stack">Tech Stack</a>
-      <a href="#bio">About</a>
-    </nav>
-  </header>
-
-  <main>
-    <div class="container">
-      <div class="identity animate-slide-in-left">
-        <br><br><br>
-        <h3 class="role" style="font-size: 40px;">The Future of Decentralized Finance</h3>
-        <p class="pitch">
-          Decentralized finance (DeFi) is revolutionizing the way the world transacts. By removing traditional
-          intermediaries, it unlocks instant, peer-to-peer financial services that are transparent, secure,
-          and globally
-          accessible.
-        </p>
-        <p class="pitch">
-          Built on blockchain, DeFi shifts control from institutions to individuals—putting power, ownership,
-          and
-          opportunity directly into users’ hands.
-        </p>
-        <a href="#demo"><button class="animate-scale">Explore the Prototype</button></a>
-      </div>
-
-      <div class="profile animate-slide-in-right">
-        <img src="./Assets/Defi.jpg" alt="Futuristic UI Illustration" />
-      </div>
-    </div>
-
-    <section class="info-section animate-fade-in" id="vision">
-      <h2>Why DeFi?</h2>
-      <p>Traditional banking is slow, centralized, and full of restrictions. Hidden fees, bureaucracy, and access
-        limitations plague billions.</p>
-        <br>
-      <p>DeFi removes the middlemen. It empowers users with smart contract-driven financial services — open,
-        trustless, and permissionless.</p>
-    </section>
-
-    <section class="info-section animate-fade-in" id="features">
-      <h2>Core Features</h2>
-      <ul>
-        <li>🔐 Secured by blockchain technology</li>
-        <li>🌍 Accessible from anywhere in the world</li>
-        <li>⚡ Lightning-fast transactions</li>
-        <li>🤝 No intermediaries or central control</li>
-        <li>📈 Earn yields through staking and lending</li>
-      </ul>
-    </section>
-
-    <section class="info-section animate-fade-in" id="usecases">
-      <h2>Use Case Examples</h2>
-      <ul>
-        <li>Send money abroad instantly — no delays, no fees</li>
-        <li>Earn passive income by staking your crypto</li>
-        <li>Borrow funds without needing a bank or credit score</li>
-      </ul>
-    </section>
-
-    <section class="info-section animate-fade-in" id="stack">
-      <h2>Tech Stack</h2>
-      <ul>
-        <li>Blockchain Network: Ethereum (with Layer 2 scalability)</li>
-        <li>Smart Contracts: Solidity + Hardhat</li>
-        <li>Backend: Node.js, Express, MongoDB</li>
-        <li>Hosting: AWS EC2, IPFS</li>
-        <li>Security: HTTPS with Let's Encrypt, UFW, fail2ban</li>
-      </ul>
-    </section>
-
-    <section class="info-section animate-fade-in" id="demo">
-      <h2>Want to See It in Action?</h2>
-      <center>
-      <a href="#" class="btn">🚀 Join the Waitlist</a>
-      <a href="#" class="btn">📖 Read the Whitepaper</a>
-      </center>
-    </section>
-
-    <section class="info-section animate-fade-in" id="bio">
-      <h2>Meet the Visionary</h2>
-      <p style="font-size: 30px; color: #ffffff;"><strong>Aifuwa Jeffery</strong> <span style="font-size: 20px; color:#d8b4fe;"> <em>- Lead Cloud Engineer</em></span></p> <br>
-      <p>
-        I am a Cloud/DevOps Engineer with a background in mechanical engineering and a cloud engineering diploma
-        (in
-        view) from AltSchool Africa. At Hugo Inc., I leads quality assurance—auditing datasets, and
-        collaborating with AI teams to deliver clean, high-impact data that strengthens model performance. I
-        combine
-        infrastructure mastery with a drive for innovation. This project reflects my belief in open, user-owned
-        finance.
-      </p>
-      <br><br>
-      <center>
-        <p style="font-size: 25px;"><em>"We believe in a financial future owned by its users."</em></p>
-      </center>
-    </section>
-
-    <section class="info-section animate-fade-in" id="projects">
-      <h2>Featured Project: DeFi Landing Page</h2>
-      <p>
-        As part of my cloud engineering journey, I built and deployed a decentralized finance (DeFi) landing
-        page
-        prototype hosted on an AWS EC2 Ubuntu instance. It features an Nginx reverse proxy setup with Node.js
-        and
-        Express, secured via HTTPS using Let's Encrypt.
-      </p>
-      <br>
-      <p>
-        I handled every layer of the stack—from server setup and SSL certificate automation to backend
-        configuration and
-        front-end design—demonstrating real-world DevOps practices and infrastructure-as-code principles.
-      </p>
-      <br>
-      <p>
-        This project reflects my goal to build cloud-native infrastructure for the future of finance, showcasing
-        both
-        technical proficiency and a passion for impactful innovation.
-      </p>
-      <br>
-      <p>
-        <strong>Stack Used:</strong> AWS EC2, Ubuntu, Nginx, Node.js + Express, Git/GitHub, Let's Encrypt SSL,
-        HTML,
-        CSS, JavaScript.
-      </p>
-    </section>
-
-    <section class="info-section animate-fade-in" id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>LLM Testing & Prompt Engineering</li>
-        <li>Cloud & DevOps (AWS, Linux, Bash, UFW, Systemd)</li>
-        <li>Web Development (HTML, CSS, JavaScript, WordPress)</li>
-        <li>Version Control (Git & GitHub)</li>
-        <li>Data Annotation, QA, & Rubric-based Auditing</li>
-        <li>Analytical Tools (Google Workspace, Microsoft Excel)</li>
-      </ul>
-    </section>
-
-    <section class="info-section animate-fade-in" id="projects">
-      <h2>Past Projects</h2>
-      <ul>
-        <li>Built multiple static websites using WordPress</li>
-        <li>Set up and managed Linux servers on AWS</li>
-        <li>Created AI prompts for jailbreak testing and red teaming</li>
-        <li>Developed and tested LLM behavior across diverse adversarial prompt scenarios</li>
-        <li>Fine-tuned generative AI outputs by analyzing annotation patterns and model responses</li>
-      </ul>
-    </section>
-
-    <section class="info-section animate-fade-in">
-      <h2>Education</h2>
-      <ul>
-        <li>Cloud Engineering Diploma (In View) – AltSchool Africa, 2025</li>
-        <li>Bachelor’s in Mechanical Engineering – Federal University of Agriculture, Abeokuta, 2021</li>
-      </ul>
-    </section>
-
-    <section class="info-section animate-fade-in">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Python Programming — SoloLearn</li>
-        <li>Introduction to Artificial Intelligence — Udemy</li>
-        <li>Cybersecurity & Networking Essentials — Cisco</li>
-        <li>Google Workspace — Google Cloud</li>
-      </ul>
-    </section>
-
-    <section class="info-section animate-fade-in" id="contact">
-      <h2>Contact</h2>
-      <ul>
-        <li><p>Email: <a href="mailto:jefferyaifuwa@gmail.com">jefferyaifuwa@gmail.com</a></p></li>
-      <li><p>LinkedIn: <a href="https://www.linkedin.com/in/jefferyaifuwa-cloud/"
-          target="_blank">linkedin.com/in/jefferyaifuwa-cloud</a>
-      </p></li>
-      <li><p>GitHub: <a href="https://github.com/Jeffery-Aifuwa" target="_blank">github.com/jeffery-aifuwa</a></p></li>
-      </ul>
-    </section>
-
-    <footer>
-      <p style="text-align: center; color: #bdbdbd; font-size: 14px; margin-top: 60px;">
-        &copy; 2025 The Future - Decentralized Finance. All rights reserved.
-      </p>
-    </footer>
-  </main>
+  <h1>Hello Jeff, Docker is working!</h1>
 </body>
-
 </html>
